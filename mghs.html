@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - Toyota Fortuner</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .left {
+        flex: 2;
+        padding-right: 40px;
+      }
+
+      .right {
+        flex: 1;
+        border-left: 1px solid #eee;
+        padding-left: 40px;
+      }
+
+      img.car-img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .specs,
+      .features {
+        margin: 20px 0;
+      }
+
+      .specs p,
+      .features span {
+        display: inline-block;
+        background: #f0f0f0;
+        margin: 5px 5px 0 0;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+      }
+
+      .description {
+        line-height: 1.6;
+      }
+
+      .right h2 {
+        margin-bottom: 20px;
+      }
+
+      form label {
+        font-size: 14px;
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 5px;
+      }
+
+      form input,
+      form select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .left,
+        .right {
+          padding: 0;
+          border: none;
+        }
+        .right {
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Side -->
+      <div class="left">
+        <h1>Toyota Fortuner</h1>
+        <img
+          src="./img/mghs.jpg"
+          class="car-img"
+          alt="Toyota Fortuner"
+        />
+
+        <div class="specs">
+          <strong>Specifications:</strong>
+          <p>Model: 2021 - 2024</p>
+          <p>Fuel: Diesel / Petrol</p>
+          <p>Gear Type: Automatic</p>
+        </div>
+
+        <div class="features">
+          <strong>Car Features:</strong><br />
+          <span>7 Seats</span>
+          <span>Air Conditioning</span>
+          <span>ABS + EBD</span>
+          <span>Airbags</span>
+          <span>Rear Camera</span>
+          <span>Sunroof</span>
+          <span>Touchscreen Display</span>
+          <span>With / Without Driver</span>
+        </div>
+
+        <div class="description">
+          <h3>Description of Listing</h3>
+          <p>
+            The Toyota Fortuner is a premium SUV that blends rugged performance
+            with luxury features. Perfect for family trips and business travel,
+            the Fortuner provides high ground clearance, modern tech, and a
+            commanding road presence.
+          </p>
+
+          <h3>Why Deinfa and Why Toyota Fortuner?</h3>
+          <ul>
+            <li>
+              <strong>Latest Model:</strong> We offer the newest Fortuner models
+              with enhanced comfort and features.
+            </li>
+            <li>
+              <strong>Flexible Rental:</strong> Hourly, daily, or weekly — our
+              packages are customizable.
+            </li>
+            <li>
+              <strong>Urban + Offroad:</strong> Whether in the city or hills,
+              Fortuner handles all terrains.
+            </li>
+            <li>
+              <strong>With or Without Driver:</strong> Choose what suits you
+              best!
+            </li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="right">
+        <h2>Booking Form</h2>
+        <form>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required />
+
+          <label for="pickup">Pickup Date:</label>
+          <input type="date" id="pickup" required />
+
+          <label for="return">Return Date:</label>
+          <input type="date" id="return" required />
+
+          <label for="location">Pickup Location:</label>
+          <input type="text" id="location" required />
+
+          <label for="car">Car Model:</label>
+          <select id="car">
+            <option selected>Toyota Fortuner</option>
+            <option>Haval H6 HEV</option>
+            <option>MG HS</option>
+            <option>Haval Jolion</option>
+          </select>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

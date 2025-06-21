@@ -1,0 +1,382 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Unique Renta car</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo">
+            <img src="./img/logo-light.png" alt="logo" class="logo-light" />
+            <img src="./img/logo-dark.png" alt="logo" class="logo-dark" />
+            Unique Renta Carinin
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="car.html">Cars</a></li>
+        <li><a href="Feature.html">Features</a></li>
+        <li><a href="help.html">Help</a></li>
+         <li>
+          <button class="btn">
+            <span><i class="ri-apple-fill"></i></span>
+            Download App
+          </button>
+        </li>
+      </ul>
+    </nav>
+ 
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .car-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            width: 320px;  
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .car-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(8, 8, 8, 0.2);
+        }
+
+        .car-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .car-box h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 5px; 
+        }
+
+        .car-box .details {
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .car-box .price {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .car-box .specs {
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 0.85em;
+            color: #555;
+        }
+
+        .car-box .specs span {
+            display: block;
+        }
+
+        .car-box .rent-button {
+            background-color: #dc3545; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .car-box .rent-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="car-box">
+        <img src="./img/havel h6.jpg" alt="Haval H6 HEV">
+        <h3>Haval H6 HEV</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel:Hybrid</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨18,000 / Day</p>
+        
+        </div>
+        <div class="specs">
+            <span>Avg:9-11<br>km/l</span>
+            <span>Fuel: Hybrid</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="havalh6.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/corola.jpg" alt="Corolla Cross HEV">
+        <h3>Corolla Cross HEV</h3>
+        <div class="details">
+            <p>Model: 22-23</p>
+            <p>Fuel: Hybrid</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨15,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>10-17<br>km/l</span>
+            <span>Fuel: Hybrid</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="carola.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/images tuso.jpg" alt="Hyundai Tucson">
+        <h3>Hyundai Tucson</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨13,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg:15-17<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="tucso.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/Sportage_.jpeg" alt="KIA Sportage">
+        <h3>KIA Sportage</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨12,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg:14-18<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="sportage.HTML" class="rent-button">Rent Now</a>
+    </div>
+
+
+    <div class="car-box">
+        <img src="./img/sonata.jpg" alt="Hyundai Sonata">
+        <h3>Hyundai Sonata</h3>
+        <div class="details">
+            <p>Model: 12-19<br>km/l</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨15,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg: 12-19<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="sonata.html" class="rent-button">Rent Now</a>
+    </div>
+</DIV>
+     <div class="car-box">
+        <img src="./img/fortunner-png.webp" alt="Toyota Fortuner">
+        <h3>Toyota-Fortuner</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel: Diesel </p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨9,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg: 8-15<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="Fortunner.html" class="rent-button">Rent Now</a>
+    </div>
+
+
+    <div class="car-box">
+        <img src="./img/hyundai elantra.jpg" alt="Hyundai Elantra">
+        <h3>Hyundai Elantra</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨9,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg: 8-15<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="elantra.html" class="rent-button">Rent Now</a>
+    </div>
+
+    
+     <div class="car-box">
+        <img src="./img/alto.img.jpg" alt="Alto">
+        <h3>Alto</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto/Manual</p>
+            <p class="price">₨5,500 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg:18-21<br>km/l</b4></span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto/Manual</span>
+        </div>
+        <a href="alto.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/mghs.jpg" alt="MG HS">
+        <h3>MG HS</h3>
+        <div class="details">
+            <p>Model: 22-23</p>
+            <p>Fuel: Petrol</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨9,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg: 8-15<br>km/l</span>
+            <span>Fuel: Petrol</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="mghs.html" class="rent-button">Rent Now</a>
+    </div>
+        <div class="car-box">
+        <img src="./img/senta.png" alt=" Toyota Senta">
+        <h3>Toyota Sienta</h3>
+        <div class="details">
+            <p>Model: 22-24</p>
+            <p>Fuel:Hybrid</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨14,000 / Day</p>
+        
+        </div>
+        <div class="specs">
+            <span>Avg:9-11<br>km/l</span>
+            <span>Fuel: Hybrid</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="sienta.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/images of havel jolion.jpg" alt="Havel Jolion">
+        <h3>Havel jolion </h3>
+        <div class="details">
+            <p>Model: 22-23</p>
+            <p>Fuel: Hybrid</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨15,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>10-17<br>km/l</span>
+            <span>Fuel: Hybrid</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="jolion.html" class="rent-button">Rent Now</a>
+    </div>
+
+    <div class="car-box">
+        <img src="./img/vigo.png" alt="Toyota Hilux">
+        <h3>Toyota Hilux</h3>
+        <div class="details">
+            <p>Model: 24-25</p>
+            <p>Fuel: Diesel</p>
+            <p>Gear Type: Auto</p>
+            <p class="price">₨13,000 / Day</p>
+        </div>
+        <div class="specs">
+            <span>Avg:15-17<br>km/l</span>
+            <span>Fuel: Diesel</span>
+            <span>Trans: Auto</span>
+        </div>
+        <a href="hilux.html" class="rent-button">Rent Now</a>
+    </div>
+
+    
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="./img/logo-dark.png" alt="logo" />
+            Unique
+          </a>
+          <p class="section__description">
+            Experience the best of Pakistan with the elegance and reliability of
+            Premium Car Rental.
+          </p>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="car.html">Cars</a></li>
+            <li><a href="fehtml">Futures</a></li>
+            <li><a href="help.html">Help</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe To News</h4>
+          <form action="/">
+            <input type="text" placeholder="uniquecar.gmail.com" />
+            <button class="btn"><i class="ri-arrow-right-line"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+</body>
+</html>

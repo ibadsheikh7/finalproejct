@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - KIA Sportage</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh;
+            padding-top: 20px; 
+        }
+
+        .container {
+            display: flex; 
+            width: 90%; 
+            max-width: 1200px; 
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+         .car-details {
+            flex: 2; 
+            padding: 30px;
+            border-right: 1px solid #eee; 
+        }
+        .car-details h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .car-details h3 {
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .car-details h4 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .car-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .car-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+         .specifications-grid {
+            display: grid;
+            grid-template-columns: auto 1fr; 
+            gap: 10px 15px;
+            margin-bottom: 20px;
+        }
+        .specifications-grid strong {
+            color: #333;
+            font-weight: bold;
+        }
+        .specifications-grid span {
+            color: #555;
+        }
+
+         .car-features ul {
+            list-style: none;
+            padding: 0;
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            margin-top: 15px;
+        }
+        .car-features ul li {
+            background: #e9f5ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: #007bff;
+            font-size: 0.9em;
+            border: 1px solid #cce5ff;
+        }
+
+         .description p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .description ul {
+            list-style: disc; 
+            margin-left: 20px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .description ul li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .description ul li strong {
+            color: #333;
+        }
+
+         .booking-form-section {
+            flex: 1; 
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        .booking-form-section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .booking-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="date"],
+        .booking-form select {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+        .booking-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .booking-form button:hover {
+            background-color: #0056b3;
+        }
+
+         @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+                width: 95%; 
+            }
+            .car-details {
+                border-right: none; 
+                border-bottom: 1px solid #eee; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="car-details">
+            <h2>KIA Sportage</h2>
+            <div class="car-image">
+                <img src="./img/Sportage_.jpeg" alt="Kia Sportage">
+            </div>
+
+            <h3>Specifications</h3>
+            <div class="specifications-grid">
+                <strong>Model:</strong> <span>2022-2024</span>
+                <strong>Fuel:</strong> <span>Petrol</span>
+                <strong>Gear Type:</strong> <span>Automatic (FWD/AWD)</span>
+            </div>
+
+            <h3>Car Features</h3>
+            <div class="car-features">
+                <ul>
+                    <li>Air Condition</li>
+                    <li>5 Seats</li>
+                    <li>Airbags</li>
+                    <li>Maintenance</li>
+                    <li>With / Without Driver</li>
+                    <li>Panoramic Sunroof</li>
+                    <li>Push Start</li>
+                    <li>Leather Seats</li>
+                    <li>Parking Sensors</li>
+                </ul>
+            </div>
+
+            <div class="description">
+                <h3>Description of Listing</h3>
+                <h4>KIA Sportage – Rent a Car</h4>
+                <p>
+                    The KIA Sportage is a popular compact SUV renowned for its bold styling, comfortable interior, and engaging driving dynamics. It offers a perfect blend of urban agility and highway cruising comfort, making it a versatile choice for various travel needs.
+                </p>
+
+                <h3>Why Deinfa and Why KIA Sportage?</h3>
+                <p>
+                    Renting the KIA Sportage from Deinfa ensures you get a vehicle that combines modern design with a feature-rich experience. It's an excellent choice for those who appreciate contemporary aesthetics and a smooth, enjoyable ride.
+                </p>
+                <ul>
+                    <li><strong>Striking Design:</strong> The Sportage boasts a distinctive and sporty exterior that turns heads.</li>
+                    <li><strong>Spacious and Comfortable:</strong> With a well-designed cabin and ample space for five passengers, the Sportage guarantees a comfortable journey for everyone.</li>
+                    <li><strong>Feature-Packed:</strong> Our Sportage models come equipped with a range of modern amenities like a panoramic sunroof, push-button start, and advanced infotainment systems, enhancing your driving pleasure.</li>
+                    <li><strong>Smooth Performance:</strong> Its refined automatic transmission and capable engine provide a smooth and confident drive, whether in the city or on long routes.</li>
+                    <li><strong>Inter/Intra City Travel:</strong> The KIA Sportage is perfectly suited for both navigating busy city streets and undertaking comfortable inter-city road trips across Pakistan.</li>
+                    <li><strong>Rental Duration:</strong> Deinfa offers flexible rental plans for the KIA Sportage, from short-term hourly rentals to daily, weekly, or longer-term options to fit your schedule.</li>
+                    <li><strong>Points to Remember</strong></li>
+                </ul>
+                <p>
+                    The KIA Sportage offers a premium feel with its comfortable seating, intuitive controls, and robust performance. Its modern features and reliable build make it a top choice for a dependable rental. Choose DEINFA for a hassle-free rental experience with a well-maintained and stylish KIA Sportage.
+                </p>
+            </div>
+        </div>
+
+        <div class="booking-form-section">
+            <h2>Booking Form</h2>
+            <form class="booking-form" action="#" method="POST">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <label for="pickupDate">Pickup Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required />
+
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required />
+
+                <label for="pickupLocation">Pickup Location:</label>
+                <input
+                    type="text"
+                    id="pickupLocation"
+                    name="pickupLocation"
+                    required
+                />
+
+                <label for="carModel">Car Model:</label>
+                <select id="carModel" name="carModel" required>
+                    <option value="kiaSportage" selected>KIA Sportage</option>
+                    <option value="hyundaiTucson">Hyundai Tucson</option>
+                    <option value="corollaCrossHev">Corolla Cross HEV</option>
+                    <option value="havalH6hev">Haval H6 HEV</option>
+                    <option value="otherModel">Other Model (if applicable)</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

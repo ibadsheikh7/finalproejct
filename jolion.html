@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - Haval Jolion</title>
+    <link href="./img/images of havel jolion.jpg" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 20px;
+      }
+
+      .container {
+        display: flex;
+        width: 90%;
+        max-width: 1200px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+
+      .car-details {
+        flex: 2;
+        padding: 30px;
+        border-right: 1px solid #eee; 
+      }
+      .car-details h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .car-details h3 {
+        color: #333;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      .car-details h4 {
+        color: #555;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .car-image {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .car-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .specifications-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px 15px;
+        margin-bottom: 20px;
+      }
+      .specifications-grid strong {
+        color: #333;
+        font-weight: bold;
+      }
+      .specifications-grid span {
+        color: #555;
+      }
+
+      .car-features ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .car-features ul li {
+        background: #e9f5ff;
+        padding: 8px 15px;
+        border-radius: 20px;
+        color: #007bff;
+        font-size: 0.9em;
+        border: 1px solid #cce5ff;
+      }
+
+      .description p {
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .description ul {
+        list-style: disc;
+        margin-left: 20px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .description ul li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+      .description ul li strong {
+        color: #333;
+      }
+
+      .booking-form-section {
+        flex: 1;
+        padding: 30px;
+        background-color: #f9f9f9;
+      }
+      .booking-form-section h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .booking-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+      }
+      .booking-form input[type="text"],
+      .booking-form input[type="email"],
+      .booking-form input[type="tel"],
+      .booking-form input[type="date"],
+      .booking-form select {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .booking-form button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+      .booking-form button:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          width: 95%;
+        }
+        .car-details {
+          border-right: none;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="car-details">
+        <h2>Haval Jolion</h2>
+        <div class="car-image">
+          <img src="./img/images of havel jolion.jpg" alt="Haval Jolion" />
+        </div>
+
+        <h3>Specifications</h3>
+        <div class="specifications-grid">
+          <strong>Model:</strong> <span>2022-2024</span> <strong>Fuel:</strong>
+          <span>Petrol</span> <strong>Gear Type:</strong>
+          <span>Automatic (DCT)</span>
+        </div>
+
+        <h3>Car Features</h3>
+        <div class="car-features">
+          <ul>
+            <li>Air Condition</li>
+            <li>5 Seats</li>
+            <li>Airbags</li>
+            <li>Maintenance</li>
+            <li>With / Without Driver</li>
+            <li>Panoramic Sunroof</li>
+            <li>Adaptive Cruise Control</li>
+            <li>360-Degree Camera</li>
+            <li>Infotainment System</li>
+            <li>Parking Sensors</li>
+          </ul>
+        </div>
+
+        <div class="description">
+          <h3>Description of Listing</h3>
+          <h4>Haval Jolion – Rent a Car</h4>
+          <p>
+            The Haval Jolion is a modern and stylish compact SUV known for its
+            futuristic design, advanced technology, and comfortable ride. It
+            offers a premium experience with a spacious cabin and a host of
+            smart features, perfect for both city driving and long-distance
+            journeys.
+          </p>
+
+          <h3>Why Deinfa and Why Haval Jolion?</h3>
+          <p>
+            Renting the Haval Jolion from Deinfa means choosing a car that
+            stands out with its unique blend of style, technology, and
+            practicality. It's an excellent option for those who want a
+            contemporary SUV with all the modern comforts.
+          </p>
+          <ul>
+            <li>
+              <strong>Cutting-Edge Design:</strong> The Jolion's sleek lines and
+              bold front grille give it a distinctive and appealing look.
+            </li>
+            <li>
+              <strong>Tech-Savvy Interior:</strong> Enjoy a high-tech cabin with
+              a large touchscreen infotainment system, digital instrument
+              cluster, and smart connectivity features.
+            </li>
+            <li>
+              <strong>Comfort and Space:</strong> The spacious interior provides
+              ample legroom and headroom for all passengers, ensuring a relaxed
+              and enjoyable ride, even on longer trips.
+            </li>
+            <li>
+              <strong>Advanced Safety:</strong> Equipped with multiple airbags
+              and advanced driver-assistance systems like adaptive cruise
+              control and parking sensors for a safe journey.
+            </li>
+            <li>
+              <strong>Inter/Intra City Travel:</strong> Its smooth automatic
+              transmission and comfortable suspension make it ideal for
+              navigating city traffic as well as cruising on highways.
+            </li>
+            <li>
+              <strong>Rental Duration:</strong> Deinfa offers flexible rental
+              durations for the Haval Jolion, from a few hours to daily, weekly,
+              or even longer terms, tailored to your specific requirements.
+            </li>
+            <li><strong>Points to Remember</strong></li>
+          </ul>
+          <p>
+            The Haval Jolion provides a refreshing and sophisticated driving
+            experience with its focus on modern features and passenger comfort.
+            Choose Deinfa for a well-maintained Haval Jolion, ensuring your
+            rental experience is smooth, enjoyable, and hassle-free.
+          </p>
+        </div>
+      </div>
+
+      <div class="booking-form-section">
+        <h2>Booking Form</h2>
+        <form class="booking-form" action="#" method="POST">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="pickupDate">Pickup Date:</label>
+          <input type="date" id="pickupDate" name="pickupDate" required />
+
+          <label for="returnDate">Return Date:</label>
+          <input type="date" id="returnDate" name="returnDate" required />
+
+          <label for="pickupLocation">Pickup Location:</label>
+          <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            required
+          />
+
+          <label for="carModel">Car Model:</label>
+          <select id="carModel" name="carModel" required>
+            <option value="havalJolion" selected>Haval Jolion</option>
+            <option value="kiaSportage">KIA Sportage</option>
+            <option value="hyundaiTucson">Hyundai Tucson</option>
+            <option value="corollaCrossHev">Corolla Cross HEV</option>
+            <option value="havalH6hev">Haval H6 HEV</option>
+            <option value="otherModel">Other Model (if applicable)</option>
+          </select>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

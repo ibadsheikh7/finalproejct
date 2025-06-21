@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental - Hyundai Sonata</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        width: 90%;
+        max-width: 1200px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 88px;
+        overflow: hidden;
+      }
+      .car-details {
+        flex: 2;
+        padding: 30px;
+        border-right: 1px solid #eee;
+      }
+      .car-details h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .car-details h3 {
+        color: #333;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      .car-details h4 {
+        color: #555;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .car-image {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .car-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .specifications-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px 15px;
+        margin-bottom: 20px;
+      }
+      .specifications-grid strong {
+        color: #333;
+        font-weight: bold;
+      }
+      .specifications-grid span {
+        color: #555;
+      }
+      .car-features ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .car-features ul li {
+        background: #e9f5ff;
+        padding: 8px 15px;
+        border-radius: 20px;
+        color: #007bff;
+        font-size: 0.9em;
+        border: 1px solid #cce5ff;
+      }
+      .description p {
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .description ul {
+        list-style: disc;
+        margin-left: 20px;
+        color: #666;
+        margin-bottom: 15px;
+      }
+      .description ul li {
+        margin-bottom: 8px;
+        line-height: 1.5;
+      }
+      .description ul li strong {
+        color: #333;
+      }
+
+      .booking-form-section {
+        flex: 1;
+        padding: 30px;
+        background-color: #f9f9f9;
+      }
+      .booking-form-section h2 {
+        margin-top: 0;
+        color: #333;
+      }
+      .booking-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+      }
+      .booking-form input[type="text"],
+      .booking-form input[type="email"],
+      .booking-form input[type="tel"],
+      .booking-form input[type="date"],
+      .booking-form select {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .booking-form button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+      .booking-form button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          width: 95%;
+          border-radius: 8px;
+        }
+        .car-details {
+          border-right: none;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="car-details">
+        <h2>Hyundai Sonata</h2>
+        <div class="car-image">
+          <img src="./img/sonata.jpg alt="Hyundai Sonata" />
+        </div>
+
+        <h3>Specifications</h3>
+        <div class="specifications-grid">
+          <strong>Model:</strong> <span>2020-2024</span> <strong>Fuel:</strong>
+          <span>Petrol</span> <strong>Gear Type:</strong>
+          <span>Automatic</span> <strong>Engine:</strong>
+          <span>2.0L / 2.5L (Variant Dependent)</span>
+        </div>
+
+        <h3>Car Features</h3>
+        <div class="car-features">
+          <ul>
+            <li>Air Condition (Dual-Zone Climate Control)</li>
+            <li>5 Seats</li>
+            <li>Multiple Airbags</li>
+            <li>Power Steering & Windows</li>
+            <li>Push Start Button</li>
+            <li>Panoramic Sunroof (Variant Dependent)</li>
+            <li>
+              Touchscreen Infotainment System (Apple CarPlay/Android Auto)
+            </li>
+            <li>Smart Cruise Control</li>
+            <li>Blind-Spot Monitoring</li>
+            <li>Rearview Camera & Parking Sensors</li>
+            <li>Heated/Ventilated Seats (Variant Dependent)</li>
+            <li>Leather Upholstery (Variant Dependent)</li>
+            <li>With / Without Driver</li>
+            <li>Drive Mode Select</li>
+            <li>Wireless Charging</li>
+          </ul>
+        </div>
+
+        <div class="description">
+          <h3>Description of Listing</h3>
+          <h4>Hyundai Sonata – Rent a Car</h4>
+          <p>
+            The Hyundai Sonata is a sophisticated mid-size sedan that combines
+            elegant design with advanced technology and a supremely comfortable
+            driving experience. It's an ideal choice for business professionals,
+            families, or anyone seeking a premium and spacious vehicle for both
+            city commutes and long-distance journeys. The Sonata stands out with
+            its sleek exterior, refined interior, and a host of modern safety
+            and convenience features.
+          </p>
+
+          <h3>Why Deinfa and Why Hyundai Sonata?</h3>
+          <p>
+            Renting the Hyundai Sonata from Deinfa offers an experience of
+            luxury, comfort, and advanced features. It's perfect for those who
+            desire a stylish and powerful sedan that provides a smooth and
+            enjoyable ride, whether for executive travel, family vacations, or
+            special occasions.
+          </p>
+          <ul>
+            <li>
+              <strong>Luxurious & Spacious Interior:</strong> Enjoy a generously
+              appointed cabin with ample legroom and premium materials, ensuring
+              maximum comfort for all passengers.
+            </li>
+            <li>
+              <strong>Sleek & Dynamic Design:</strong> The Sonata's striking
+              exterior, featuring Hyundai's signature Sensuous Sportiness design
+              language, makes a lasting impression.
+            </li>
+            <li>
+              <strong>Smooth & Powerful Performance:</strong> Equipped with
+              responsive engines and an automatic transmission, the Sonata
+              delivers a refined and confident driving experience.
+            </li>
+            <li>
+              <strong>Cutting-Edge Technology:</strong> Benefit from advanced
+              features like a large touchscreen infotainment system, smart
+              safety aids, and connectivity options for a truly modern ride.
+            </li>
+            <li>
+              <strong>Enhanced Safety:</strong> With a comprehensive suite of
+              safety features and driver-assistance systems, the Sonata
+              prioritizes your peace of mind on the road.
+            </li>
+            <li>
+              <strong>Inter/Intra City Travel:</strong> Its comfortable ride and
+              robust performance make it an excellent choice for both urban
+              environments and extensive inter-city travel.
+            </li>
+            <li>
+              <strong>Flexible Rental Duration:</strong> Deinfa offers flexible
+              rental durations for the Hyundai Sonata, from a few hours to
+              daily, weekly, or longer terms, tailored to your specific
+              requirements.
+            </li>
+            <li><strong>Points to Remember</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="booking-form-section">
+        <h2>Booking Form</h2>
+        <form class="booking-form" action="#" method="POST">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="pickupDate">Pickup Date:</label>
+          <input type="date" id="pickupDate" name="pickupDate" required />
+
+          <label for="returnDate">Return Date:</label>
+          <input type="date" id="returnDate" name="returnDate" required />
+
+          <label for="pickupLocation">Pickup Location:</label>
+          <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            required
+          />
+
+          <label for="carModel">Car Model:</label>
+          <select id="carModel" name="carModel" required>
+            <option value="hyundaiSonata" selected>Hyundai Sonata</option>
+            <option value="hyundaiElantra">Hyundai Elantra</option>
+            <option value="havalJolion">Haval Jolion</option>
+            <option value="kiaSportage">KIA Sportage</option>
+            <option value="hyundaiTucson">Hyundai Tucson</option>
+            <option value="corollaCrossHev">Corolla Cross HEV</option>
+            <option value="havalH6hev">Haval H6 HEV</option>
+            <option value="suzukiAlto">Suzuki Alto</option>
+            <option value="otherModel">Other Model (if applicable)</option>
+          </select>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

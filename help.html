@@ -1,0 +1,499 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help & Support - Unique Car Rental</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      nav {
+        width: 90%;
+        max-width: 1200px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .nav__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .nav__logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .nav__logo img {
+        height: 30px;
+        width: auto;
+      }
+      .nav__logo .logo-dark {
+        display: none;
+      }
+
+      .nav__menu__btn {
+        font-size: 1.8rem;
+        color: #333;
+        cursor: pointer;
+        display: none;
+      }
+
+      .nav__links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+
+      .nav__links li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav__links li a:hover {
+        color: #007bff;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      .help__container {
+        width: 90%;
+        max-width: 1200px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+        padding: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      .section__header {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+      .section__header .blue-part {
+        color: blue;
+      }
+      .section__header .red-part {
+        color: #ff4d4d;
+      }
+
+      .section__subheader {
+        font-size: 1.2rem;
+        color: #777;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .section__description {
+        font-size: 1rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+      }
+
+      .faq__section {
+        margin-top: 40px;
+      }
+
+      .faq__item {
+        background-color: #f9f9f9;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .faq__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #333;
+        cursor: pointer;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+      }
+      .faq__question:hover {
+        background-color: #f0f0f0;
+      }
+
+      .faq__question i {
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .faq__answer {
+        padding: 0 20px 15px;
+        color: #555;
+        line-height: 1.6;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      }
+
+      .faq__item.open .faq__answer {
+        max-height: 200px;
+        padding: 15px 20px;
+      }
+
+      .faq__item.open .faq__question i {
+        transform: rotate(180deg);
+      }
+
+      .contact__section {
+        margin-top: 40px;
+        text-align: center;
+        padding: 30px;
+        background-color: #ffebeb;
+        border-radius: 8px;
+        border: 1px solid #ff4d4d;
+      }
+
+      .contact__section h3 {
+        color: #ff4d4d;
+        margin-bottom: 20px;
+      }
+
+      .contact__info p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .contact__info i {
+        font-size: 1.3rem;
+        color: #ff4d4d;
+      }
+
+      .cta-btn {
+        background-color: #ff4d4d;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        margin-top: 40px;
+        text-decoration: none;
+      }
+
+      .cta-btn:hover {
+        background-color: #cc0000;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        nav,
+        .help__container {
+          width: 95%;
+          padding: 20px;
+        }
+        nav {
+          border-radius: 8px 8px 0 0;
+        }
+        .help__container {
+          border-radius: 0 0 8px 8px;
+        }
+        .section__header {
+          font-size: 2rem;
+        }
+        .section__description {
+          font-size: 0.9rem;
+        }
+        .faq__question {
+          font-size: 1rem;
+          padding: 12px 15px;
+        }
+        .contact__section {
+          padding: 20px;
+        }
+        .contact__info p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo">
+            <img src="./img/logo-dark.png" alt="logo" class="logo-light" />
+            <img src="./img/logo-light.png" alt="logo" class="logo-dark" />
+            Unique
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="car.html">Cars</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="help.html">Help</a></li>
+         <li>
+          <button class="btn">
+            <span><i class="ri-apple-fill"></i></span>
+            Download App
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="help__container">
+      <h3 class="section__subheader">WE ARE HERE TO HELP</h3>
+      <h2 class="section__header">
+        <span class="red-part">Your Questions,</span>
+        <span class="red-part">Answered.</span>
+      </h2>
+      <p class="section__description">
+        Our team is always ready to assist you. Find answers to commonly asked
+        questions below, or contact us directly.
+      </p>
+
+      <div class="faq__section">
+        <h3>Frequently Asked Questions (FAQs)</h3>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>How do I book a car?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              You can easily book a car through our website or mobile app in a
+              few simple steps. Just select your dates, location, and choose
+              your preferred vehicle. You'll receive instant confirmation!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>What documents are required to rent a car?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              You will need a valid driver's license, national ID (CNIC/Passport
+              for Pakistani citizens), and a credit/debit card for payment. For
+              international clients, an International Driving Permit (IDP) might
+              also be required.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span
+              >What should I do if the car breaks down or there's an
+              accident?</span
+            >
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              In case of an emergency, immediately call our 24/7 roadside
+              assistance helpline. Our team will reach you promptly to provide
+              the necessary support and guidance.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Can I extend my rental period?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Yes, you can extend your rental period, subject to vehicle
+              availability and additional charges. Please contact our customer
+              service team as soon as possible to arrange the extension.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Can I rent a car with a professional driver?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Absolutely! You have the option to book a professional driver
+              service during your booking process. Additional charges will apply
+              for this service.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>What payment methods do you accept?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              We accept major credit cards (Visa, MasterCard), debit cards, and
+              secure online payment gateways. Specific payment options may vary
+              by region.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>Is there an age requirement for renting a car?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Yes, the minimum age to rent a car is typically 21 years old.
+              Drivers under 25 may be subject to a young driver surcharge.
+              Please check our terms and conditions for details.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>What is your fuel policy?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Our standard fuel policy is 'Full to Full'. You will receive the
+              vehicle with a full tank and are expected to return it with a full
+              tank. Otherwise, refueling charges will apply.
+            </p>
+          </div>
+        </div>
+
+        <!-- New FAQ Item 9 -->
+        <div class="faq__item">
+          <div class="faq__question">
+            <span>What is your cancellation policy?</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </div>
+          <div class="faq__answer">
+            <p>
+              Cancellations made 24 hours prior to pickup are typically free of
+              charge. Cancellations within 24 hours or no-shows may incur a fee.
+              Please refer to your booking confirmation for specific terms.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__section">
+        <h3>Contact Us</h3>
+        <div class="contact__info">
+          <p>
+            <i class="ri-phone-line"></i> Phone: +92-3575383638 (24/7 Support)
+          </p>
+          <p><i class="ri-mail-line"></i> Email: uniquecarrental@gmail.com</p>
+          <p>
+            <i class="ri-map-pin-line"></i>
+Shop NO.101  Unique Rentalcar on Main  Rashid Minhas Road karachi,pakistan.
+          </p>
+        </div>
+        <a href="mailto:support@uniquecarrental.com" class="cta-btn">
+          <span><i class="ri-mail-send-line"></i></span>
+          Email Support
+        </a>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const navLinks = document.getElementById("nav-links");
+      const faqQuestions = document.querySelectorAll(".faq__question");
+
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener("click", () => {
+          navLinks.classList.toggle("open");
+        });
+      }
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const parentItem = question.closest(".faq__item");
+          faqQuestions.forEach((item) => {
+            if (
+              item !== question &&
+              item.closest(".faq__item").classList.contains("open")
+            ) {
+              item.closest(".faq__item").classList.remove("open");
+            }
+          });
+          parentItem.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
